@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   // AUTO-DETECTION: This line looks for the secret key in your server settings
-  const SECRET_KEY = process.env.OPENROUTER_API_KEY;
+  const SECRET_KEY = process.env.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;
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
